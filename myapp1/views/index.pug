@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  div(class="userdata")
+    if(session.is_logined)
+      p welcom #{session.nickname}
+      a(href="/auth/logout") logout
+    else
+      a(href="/auth/login") login
+
+  h1= title
+  each index in topicList
+    p
+      a(href='/') #{index.title}
+  
+  form(action="/create", method="post")
+    div
+      p goods
+      p
+        input(type="text", name="user")
+      p
+        input(type="submit", value="Summit")
+
+  p Welcome to #{title}
+  p User : #{username}

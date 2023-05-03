@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/login.css')
+  body(style="text-align: center")
+    div(id="header")
+        a(href="/") hompage
+    div(id='main')
+        form(action="/auth/login_process", method="post" )
+            div
+                h1 LoginPage
+                p
+                    input(type="text", name="id", placeholder="ID")
+                p
+                    input(type="password", name="password" placeholder="Password")
+                p
+                    input(type="submit",class="button", value="Login")
+    div(id='footer')
+        a(href="/") hompage
+        p t est

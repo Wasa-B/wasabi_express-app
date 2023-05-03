@@ -1,0 +1,24 @@
+body {
+  text-align: center;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.userdata{
+  text-align: left;
+}
+
+form{
+  background-color: aquamarine;
+  display:inline-flex;
+}
+
+.test{
+  font-size: large;
+}
+a {
+  color: #00B7FF;
+}
+
+a:hover{
+  color:blue;
+}
